@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navigation from "./components/Navigation/Navigation";
+import StateTable from "./components/StateTable/StateTable";
+import StateDataContextProvider from "./Context/StateDataContext";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TestingStats from '../src/components/TestingStats/TestingStats';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <StateDataContextProvider>
+          <Navigation />
+          <Switch>
+          <Route path="/testing-stats" exact component={TestingStats}/>
+          <Route path="/" exact component={StateTable}/>
+          </Switch>
+        </StateDataContextProvider>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,12 @@
+.summaryCard {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 55%;
+    position: absolute;
+}
+
+.eachCard {
+    padding-right: 30px;
+    text-align: center;
+}
