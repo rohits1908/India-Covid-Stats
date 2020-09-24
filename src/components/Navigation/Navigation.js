@@ -20,8 +20,12 @@ const Navigation = () => {
           <Link to="/hospital-beds">
             <li>Hospitals and Beds</li>
           </Link>
-          <li>Contact and Helpline</li>
-          <li>Notifications</li>
+          <Link to="/helpline-info">
+            <li>Contact and Helpline</li>
+          </Link>
+          <Link to = "/notifications">
+            <li>Notifications</li>
+          </Link>
         </ul>
       </nav>
     </div>
