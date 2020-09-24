@@ -1,4 +1,4 @@
-import {STORE_STATE_DATA, STORE_TESTING_DATA} from '../Constants/Index';
+import {STORE_STATE_DATA, STORE_TESTING_DATA, STORE_HOSPITAL_DATA} from '../Constants/Index';
 
 
 export const storeStatesData = (payload) => {
@@ -11,6 +11,13 @@ export const storeStatesData = (payload) => {
 export const storeTestingData = (payload) => {
     return {
         type: STORE_TESTING_DATA,
+        payload
+    }
+}
+
+export const storeHospitalData = (payload) => {
+    return {
+        type: STORE_HOSPITAL_DATA,
         payload
     }
 }

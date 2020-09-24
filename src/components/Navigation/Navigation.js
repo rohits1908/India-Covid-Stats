@@ -17,7 +17,9 @@ const Navigation = () => {
             <li>Testing Stats</li>
           </Link>
           
-          <li>Hospitals and Beds</li>
+          <Link to="/hospital-beds">
+            <li>Hospitals and Beds</li>
+          </Link>
           <li>Contact and Helpline</li>
           <li>Notifications</li>
         </ul>

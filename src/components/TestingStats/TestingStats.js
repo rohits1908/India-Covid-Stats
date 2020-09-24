@@ -3,7 +3,7 @@ import { StateContext } from '../../Context/StateDataContext';
 import {storeTestingData} from '../../Actions/Index';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button
+    CardTitle, Button
   } from 'reactstrap';
 
 export default function TestingStats() {
