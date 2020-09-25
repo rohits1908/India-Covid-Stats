@@ -23,7 +23,6 @@ export default function TestingStats() {
 
     const {data:rootData} = fetchData;
     const {data} = rootData;
-    console.log(data);
     if(typeof data !== 'undefined')
     {
         return (

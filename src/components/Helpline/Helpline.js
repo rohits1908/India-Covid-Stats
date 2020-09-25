@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { StateContext } from "../../Context/StateDataContext";
 import { storeHelplineData } from "../../Actions/Index";
+import classes from './Helpline.module.css';
 import PrimaryHelpline from '../PrimaryHelpline/PrimaryHelpline';
 
 const Helpline = () => {
@@ -23,7 +24,7 @@ const Helpline = () => {
 
       if (typeof regional !== "undefined") {
         render =  (
-          <table>
+          <table className = {classes.flTable}>
             <thead>
               <tr>
                 <th>Location</th>
@@ -49,7 +50,9 @@ const Helpline = () => {
   return (
       <>
         <PrimaryHelpline />
-        {render}
+        <div className = {classes.tableWrapper}>
+          {render}
+        </div>
       </>
 
   )
